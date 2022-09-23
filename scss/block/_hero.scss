@@ -1,0 +1,86 @@
+.hero-section {
+  margin-bottom: 136px;
+}
+.hero {
+  padding: 117px 0;
+  background-image: url("../../img/hero-bg.png");
+  background-repeat: no-repeat;
+  border-radius: 10px;
+}
+.hero__content {
+  width: 493px;
+  margin-left: 85px;
+}
+.hero__title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fefcf7;
+  margin-bottom: 32px;
+}
+.hero__text {
+  @include text-style;
+  opacity: 0.8;
+  margin-bottom: 56px;
+  max-width: 395px;
+}
+.hero-link {
+  @include btn;
+  
+}
+@media only screen and (max-width: 1021px) {
+  .hero {
+    background-image: url("../../img/hero-tablet-bg.jpg");
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 802px) {
+  .hero {
+    background-image: url("../../img/hero-tablet-bg.jpg");
+    background-size: cover;
+    background-position: left -34px center;
+  }
+  .hero__content {
+    margin-left: 58px;
+  }
+}
+@media only screen and (max-width: 689px) {
+  .hero__title {
+    font-size: 48px;
+    line-height: 48px;
+    max-width: 329px;
+    margin-bottom: 24px;
+  }
+  .hero__text {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    
+  }
+}
+@media only screen and (max-width: 624px) {
+  .hero {
+    background-image: url("../../img/hero-bg-mobile.jpg");
+    background-size: cover;
+  }
+  .hero__content {
+    margin: 0;
+    padding: 0 24px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .hero__title {
+    max-width: 100%;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 24px;
+  }
+  .hero__text {
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    max-width: 100%;
+  }
+
+}

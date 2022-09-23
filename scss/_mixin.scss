@@ -1,0 +1,25 @@
+@mixin text-style($color: #fefcf7) {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: $color;
+}
+@mixin btn {
+  font-family: $font;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  background-color: $main-color;
+  color: #fefcf7;
+  border-radius: 6px;
+  padding: 15px 31px;
+  display: inline-block;
+  transition: all 0.4s ease;
+  &:hover {
+    background-color: #66d2cf;
+  }
+  &:active {
+    background-color: #e2dedb;
+  }
+}

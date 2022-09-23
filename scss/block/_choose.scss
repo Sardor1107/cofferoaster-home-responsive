@@ -1,0 +1,135 @@
+.choose {
+  padding-top: 100px;
+  padding-bottom: 317px;
+  background-color: $dark;
+  border-radius: 10px;
+  position: relative;
+}
+.choose__content {
+  max-width: 540px;
+  margin: auto;
+}
+.content__title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  color: #fefcf7;
+}
+.content__text {
+  @include text-style;
+  opacity: 0.8;
+  text-align: center;
+  margin-top: 32px;
+}
+.choose__list {
+  position: absolute;
+  top: 346px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  max-width: 1110px;
+  display: flex;
+  justify-content: space-between;
+}
+.choose__item {
+//   width: 350px;
+  background-color: $main-color;
+  text-align: center;
+  border-radius: 8px;
+}
+.choose__best {
+    margin-top: 72px;
+    margin-bottom: 8px;
+}
+.item__content {
+    margin: 48px;
+}
+.choose__title {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #fefcf7;
+  margin-bottom: 24px;
+}
+.choose__text {
+  @include text-style;
+  max-width: 255px;
+  text-align: center;
+  margin: auto;
+}
+@media only screen and (max-width: 1150px) {
+  .choose__list {
+    max-width: 1000px;
+  }
+  .choose__item {
+    max-width: 320px;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .choose__list {
+    max-width: 900px;
+  }
+  .choose__item {
+    max-width: 290px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .choose__list {
+    max-width: 830px;
+  }
+  .choose__item {
+    max-width: 270px;
+  }
+}
+@media only screen and (max-width: 860px) {
+  .choose__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 573px;
+  }
+  .choose__item {
+    max-width: 573px;
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+  }
+  .item__content {
+    max-width: 344px;
+  }
+  .item__best {
+    width: 56px;
+    height: 56px;
+  }
+  .item__text {
+    font-size: 15px;
+    line-height: 25px;
+  }
+  .choose__content {
+    margin: auto;
+    width: 500px;
+  }
+}
+@media only screen and (max-width: 540px) {
+    .choose__content {
+        max-width: 300px;
+    }
+    .content__title {
+        font-family: 'Fraunces', serif;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 28px;
+        line-height: 28px;
+        text-align: center;
+        color: #FEFCF7;
+    }
+    .choose__item {
+        display: flex;
+        flex-direction: column;
+    }
+  }
