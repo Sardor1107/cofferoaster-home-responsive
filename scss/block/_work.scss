@@ -1,0 +1,142 @@
+.site-work {
+  margin-top: 351px;
+  margin-bottom: 200px;
+}
+.work {
+  max-width: 1045px;
+}
+.work__how {
+  font-family: "Fraunces", serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 32px;
+  color: #83888f;
+}
+.work__line {
+  max-width: 760px;
+  height: 2px;
+  margin-top: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fdd6ba;
+}
+.work__circle {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  border-radius: 50%;
+  border: 2px solid #0e8784;
+  background-color: #fefcf7;
+}
+.work__list {
+  margin-top: 82px;
+  display: flex;
+  justify-content: space-between;
+}
+.work__item {
+  max-width: 285px;
+}
+.work__number {
+  font-family: $font, serif;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 72px;
+  color: #fdd6ba;
+}
+.work__title {
+  font-family: $font, serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 36px;
+  color: #333d4b;
+  margin-top: 38px;
+  max-width: 255px;
+}
+.work__text {
+  @include text-style;
+  color: #333d4b;
+  margin-top: 42px;
+}
+.hero-link {
+  @include btn;
+  margin-top: 64px;
+}
+@media only screen and (max-width: 860px) {
+  .site-work {
+    margin-top: 670px;
+  }
+  .work__item {
+    max-width: 240px;
+  }
+  .work__line {
+    max-width: 600px;
+  }
+  .work__text {
+    max-width: 230px;
+  }
+}
+@media only screen and (max-width: 760px) {
+  .site-work {
+    margin-top: 670px;
+  }
+  .work__list {
+    margin-top: 62px;
+  }
+  .work__item {
+    max-width: 223px;
+    margin-right: 10px;
+  }
+  .work__text {
+    max-width: 230px;
+  }
+  .work__line {
+    max-width: 497px;
+  }
+}
+@media only screen and (max-width: 608px) {
+  .work__item {
+    max-width: 200px;
+    margin-right: 10px;
+  }
+  .work__text {
+    max-width: 200px;
+    margin-top: 38px;
+  }
+  .texttwo {
+    margin-top: 74px;
+  }
+}
+@media only screen and (max-width: 540px) {
+  .site-work {
+    margin-top: 1050px;
+    text-align: center;
+  }
+  .work__line {
+   display: none;
+  }
+  .work__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .work__item {
+    max-width: 327px;
+    margin: 0;
+    margin-top: 56px;
+  }
+  .work__title {
+    margin: auto;
+    margin-top: 24px;
+  }
+  .work__text {
+    max-width: 327px;
+    margin: 0;
+    margin-top: 24px;
+  }
+  .hero-link {
+    margin-top: 79px;
+  }
+}
